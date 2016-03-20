@@ -161,6 +161,8 @@ namespace libtorrent
 
 		// count the number of bits in the bitfield that are set to 1.
 		int count() const;
+		int find_first_set() const;
+		int find_last_clear() const;
 
 		struct const_iterator
 		{
